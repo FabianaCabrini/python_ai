@@ -1,4 +1,4 @@
-# 💬 ChatBot IA com Streamlit e Gemini
+# ChatBot IA com Streamlit e Gemini
 
 Um aplicativo interativo de chat construído em **Python** utilizando **Streamlit** e integrado à API do **Google Gemini** (através da interface compatível da OpenAI).
 
@@ -16,9 +16,9 @@ Um aplicativo interativo de chat construído em **Python** utilizando **Streamli
 
 ## 🚀 Funcionalidades
 
-- 💬 **Interface Intuitiva**: Interface de bate-papo fluida com `st.chat_input` e `st.chat_message`.
-- 🧠 **Histórico de Conversa (Memória)**: Armazena o contexto das mensagens enviadas usando `st.session_state`.
-- 🔑 **Segurança**: Chave de API protegida em variáveis de ambiente via `.env`.
+-  **Interface Intuitiva**: Interface de bate-papo fluida com `st.chat_input` e `st.chat_message`.
+-  **Histórico de Conversa (Memória)**: Armazena o contexto das mensagens enviadas usando `st.session_state`.
+-  **Segurança**: Chave de API protegida em variáveis de ambiente via `.env`.
 
 ---
 
