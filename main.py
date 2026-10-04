@@ -7,7 +7,16 @@
 
 # streamlit e openai
 # streamlit run main.py
+import os
+from dotenv import load_dotenv
 import streamlit as st
+from openai import OpenAI, api_key
+
+load_dotenv()
+
+modelo_ia = OpenAI(
+    api_key=os.getenv("GOOGLE_API_KEY"),
+    base_url= "https://generativelanguage.googleapis.com/v1beta/openai")
 
 st.write("## ChatBot IA")
 
@@ -34,7 +43,14 @@ if mensagem_usuario:
 
 
     # pegar a resposta de IA
-    resposta_ia = "Você perguntou: " + mensagem_usuario
+    resposta_modelo = modelo_ia.chat.completions.create(
+
+        messages=st.session_state["lista_mensagens"],
+        model="gemini-flash-lite-latest"
+    )
+
+    # modelo pegando a primeira resposta + o conteudo
+    resposta_ia = resposta_modelo.choices[0].message.content
 
     # enviar a mensagem da IA no chat
     st.chat_message("assistant").write(resposta_ia)
