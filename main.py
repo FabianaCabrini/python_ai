@@ -57,8 +57,3 @@ if mensagem_usuario:
     mensagem2 = {"role": "assistant", "content": resposta_ia}
     st.session_state["lista_mensagens"].append(mensagem2)
 
-# manter o histórico (criar memória)
-
-
-
-# tornar as respostas inteligentes
