@@ -4,7 +4,7 @@ Um aplicativo interativo de chat construído em **Python** utilizando **Streamli
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **[Python](https://www.python.org/)**: Linguagem base do projeto.
 - **[Streamlit](https://streamlit.io/)**: Framework para criação da interface do chat.
@@ -14,7 +14,7 @@ Um aplicativo interativo de chat construído em **Python** utilizando **Streamli
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 -  **Interface Intuitiva**: Interface de bate-papo fluida com `st.chat_input` e `st.chat_message`.
 -  **Histórico de Conversa (Memória)**: Armazena o contexto das mensagens enviadas usando `st.session_state`.
@@ -22,7 +22,7 @@ Um aplicativo interativo de chat construído em **Python** utilizando **Streamli
 
 ---
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 Antes de começar, você precisará ter instalado em sua máquina:
 - **Python 3.10+**
@@ -30,12 +30,17 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ---
 
-## 🔧 Configuração e Instalação
+##  Configuração e Instalação
 
 1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
    cd seu-repositorio
+   ```
+---
 
+## 🌐 Deploy
 
+O projeto está publicado e disponível para uso através do Streamlit Community Cloud:
+https://drumsai.streamlit.app/
    
